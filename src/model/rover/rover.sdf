@@ -2,43 +2,46 @@
 <sdf version="1.4">
     <model name="Rover">
         <pose>0 0 0.5 0 0 0</pose>
-        <static>false</static>
+        <static>true</static>
+
+        <!-- Link  -->
+
         <link name="body">
-            <gravity>false</gravity>
+            <gravity>true</gravity>
             <collision name="body_collision">
                 <geometry>
                     <box>
-                        <size>0.5 0.5 0.25</size>
+                        <size>0.7 0.45 0.2</size>
                     </box>
                 </geometry>
             </collision>
             <visual name="body_visual">
                 <geometry>
                     <box>
-                        <size>0.5 0.5 0.25</size>
+                        <size>0.7 0.45 0.2</size>
                     </box>
                 </geometry>
             </visual>
         </link>
 
         <link name="left_rocker">
-            <gravity>false</gravity>
-            <pose>0.25 -0.7 -0.4 1.571 0 1.571</pose>
+            <gravity>true</gravity>
+            <pose>0 -0.23 0 1.571 2.8 0</pose>
             <inertial>
-                <pose>0.7 0.35 0 0 0 0</pose>
+                <pose>0 0 0 0 0 0</pose>
             </inertial>
             <collision name="left_rocker_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker_Type_1.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
+                        <uri>model://rover/meshes/Rocker.STL</uri>
                     </mesh>
                 </geometry>
             </collision>
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -46,15 +49,15 @@
         </link>
 
         <link name="right_rocker">
-            <gravity>false</gravity>
-            <pose>-0.25 -0.7 -0.4 1.571 0 1.571</pose>
+            <gravity>true</gravity>
+            <pose>0 0.23 0 1.571 2.8 0</pose>
             <inertial>
-                <pose>0.7 0.35 0 0 0 0</pose>
+                <pose>0 0 0 0 0 0</pose>
             </inertial>
             <collision name="left_rocker_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -62,7 +65,7 @@
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -70,15 +73,15 @@
         </link>
 
         <link name="right_bogie">
-            <gravity>false</gravity>
-            <pose>-1.08 -0.6 -0.73 1.571 0 1.571</pose>
+            <gravity>true</gravity>
+            <pose>0.13 0.24 -0.22 1.571 -2 0</pose>
             <inertial>
-                <pose>0.745 0.475 0.83 0 0 0</pose>
+                <pose>0 0 0 0 0 0</pose>
             </inertial>
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -86,7 +89,7 @@
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -94,15 +97,15 @@
         </link>
 
         <link name="left_bogie">
-            <gravity>false</gravity>
-            <pose>-0.58 -0.6 -0.73 1.571 0 1.571</pose>
+            <gravity>true</gravity>
+            <pose>0.13 -0.24 -0.22 1.571 -2 0</pose>
             <inertial>
-                <pose>0.745 0.475 0.83 0 0 0</pose>
+                <pose>0 0 0 0 0 0</pose>
             </inertial>
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -110,15 +113,159 @@
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie_Type_1.STL</uri>
+                        <uri>model://rover/meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
             </visual>
         </link>
 
+        <link name="fr_wheel">
+            <gravity>true</gravity>
+            <pose>-0.67 0.305 -0.3 0 0 1.571</pose>
+            <collision name="fr_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="fr_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+        <link name="fl_wheel">
+            <gravity>true</gravity>
+            <pose>-0.67 -0.305 -0.3 0 0 1.571</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+            </inertial>
+            <collision name="fl_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="fl_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+        <link name="mr_wheel">
+            <gravity>true</gravity>
+            <pose>-0.1 0.305 -0.32 0 0 1.571</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+            </inertial>
+            <collision name="mr_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="mr_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+        <link name="ml_wheel">
+            <gravity>true</gravity>
+            <pose>-0.1 -0.305 -0.32 0 0 1.571</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+            </inertial>
+            <collision name="ml_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="ml_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+        <link name="br_wheel">
+            <gravity>true</gravity>
+            <pose>0.35 0.305 -0.32 0 0 1.571</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+            </inertial>
+            <collision name="br_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="br_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+        <link name="bl_wheel">
+            <gravity>true</gravity>
+            <pose>0.35 -0.305 -0.32 0 0 1.571</pose>
+            <inertial>
+                <pose>0 0 0 0 0 0</pose>
+            </inertial>
+            <collision name="bl_wheel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="bl_wheel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <scale>0.001 0.001 0.001</scale>
+                    </mesh>
+                </geometry>
+            </visual>
+        </link>
+
+
+        <!-- Joint  -->
+
         <joint name="left_rocker_joint" type="revolute">
-            <pose>0.7 0.35 0 0 0 0</pose>
+            <pose>0 0 0 0 0 0</pose>
             <child>left_rocker</child>
             <parent>body</parent>
             <axis>
@@ -126,11 +273,134 @@
                     <lower>-1.571</lower>
                     <upper>1.571</upper>
                 </limit>
-                <xyz>0 0 1</xyz>
+                <xyz>0 -1 0</xyz>
             </axis>
         </joint>
 
         <joint name="right_rocker_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>right_rocker</child>
+            <parent>body</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="left_bogie_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>left_bogie</child>
+            <parent>left_rocker</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="right_bogie_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>right_bogie</child>
+            <parent>right_rocker</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="fl_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>fl_wheel</child>
+            <parent>left_rocker</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="fr_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>fr_wheel</child>
+            <parent>right_rocker</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="ml_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>ml_wheel</child>
+            <parent>left_bogie</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="mr_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>mr_wheel</child>
+            <parent>right_bogie</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="bl_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>bl_wheel</child>
+            <parent>left_bogie</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+        <joint name="br_wheel_joint" type="revolute">
+            <pose>0 0 0 0 0 0</pose>
+            <child>br_wheel</child>
+            <parent>right_bogie</parent>
+            <axis>
+                <limit>
+                    <lower>-1.571</lower>
+                    <upper>1.571</upper>
+                </limit>
+                <xyz>0 -1 0</xyz>
+            </axis>
+        </joint>
+
+
+
+
+
+
+
+        <!-- <joint name="right_rocker_joint" type="revolute">
             <pose>0.7 0.35 0 0 0 0</pose>
             <child>right_rocker</child>
             <parent>body</parent>
@@ -154,7 +424,7 @@
                 </limit>
                 <xyz>0 0 1</xyz>
             </axis>
-        </joint>
+        </joint> -->
 
 
 
