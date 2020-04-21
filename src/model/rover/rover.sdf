@@ -2,7 +2,7 @@
 <sdf version="1.4">
     <model name="Rover">
         <pose>0 0 0.5 0 0 0</pose>
-        <static>true</static>
+        <static>false</static>
 
         <!-- Link  -->
 
@@ -393,40 +393,6 @@
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
-
-
-
-
-
-
-
-        <!-- <joint name="right_rocker_joint" type="revolute">
-            <pose>0.7 0.35 0 0 0 0</pose>
-            <child>right_rocker</child>
-            <parent>body</parent>
-            <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
-                <xyz>0 0 1</xyz>
-            </axis>
-        </joint>
-
-        <joint name="right_bogie_joint" type="revolute">
-            <pose>0.745 0.475 0.83 0 0 0</pose>
-            <child>right_bogie</child>
-            <parent>right_rocker</parent>
-            <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
-                <xyz>0 0 1</xyz>
-            </axis>
-        </joint> -->
-
-
 
     </model>
 </sdf>
