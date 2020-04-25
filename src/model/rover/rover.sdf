@@ -8,6 +8,7 @@
 
         <link name="body">
             <gravity>true</gravity>
+
             <collision name="body_collision">
                 <geometry>
                     <box>
@@ -15,6 +16,7 @@
                     </box>
                 </geometry>
             </collision>
+
             <visual name="body_visual">
                 <geometry>
                     <box>
@@ -27,9 +29,11 @@
         <link name="left_rocker">
             <gravity>true</gravity>
             <pose>0 -0.23 0 1.571 2.8 0</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="left_rocker_collision">
                 <geometry>
                     <mesh>
@@ -38,6 +42,7 @@
                     </mesh>
                 </geometry>
             </collision>
+
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
@@ -51,9 +56,11 @@
         <link name="right_rocker">
             <gravity>true</gravity>
             <pose>0 0.23 0 1.571 2.8 0</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="left_rocker_collision">
                 <geometry>
                     <mesh>
@@ -62,6 +69,7 @@
                     </mesh>
                 </geometry>
             </collision>
+
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
@@ -75,9 +83,11 @@
         <link name="right_bogie">
             <gravity>true</gravity>
             <pose>0.13 0.24 -0.22 1.571 -2 0</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
@@ -86,6 +96,7 @@
                     </mesh>
                 </geometry>
             </collision>
+
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
@@ -99,9 +110,11 @@
         <link name="left_bogie">
             <gravity>true</gravity>
             <pose>0.13 -0.24 -0.22 1.571 -2 0</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
@@ -110,6 +123,7 @@
                     </mesh>
                 </geometry>
             </collision>
+
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
@@ -123,6 +137,7 @@
         <link name="fr_wheel">
             <gravity>true</gravity>
             <pose>-0.67 0.305 -0.3 0 0 1.571</pose>
+
             <collision name="fr_wheel_collision">
                 <geometry>
                     <mesh>
@@ -130,7 +145,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="fr_wheel_visual">
                 <geometry>
                     <mesh>
@@ -144,9 +172,11 @@
         <link name="fl_wheel">
             <gravity>true</gravity>
             <pose>-0.67 -0.305 -0.3 0 0 1.571</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="fl_wheel_collision">
                 <geometry>
                     <mesh>
@@ -154,7 +184,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="fl_wheel_visual">
                 <geometry>
                     <mesh>
@@ -168,9 +211,11 @@
         <link name="mr_wheel">
             <gravity>true</gravity>
             <pose>-0.1 0.305 -0.32 0 0 1.571</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="mr_wheel_collision">
                 <geometry>
                     <mesh>
@@ -178,7 +223,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="mr_wheel_visual">
                 <geometry>
                     <mesh>
@@ -192,9 +250,11 @@
         <link name="ml_wheel">
             <gravity>true</gravity>
             <pose>-0.1 -0.305 -0.32 0 0 1.571</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="ml_wheel_collision">
                 <geometry>
                     <mesh>
@@ -202,7 +262,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="ml_wheel_visual">
                 <geometry>
                     <mesh>
@@ -216,9 +289,11 @@
         <link name="br_wheel">
             <gravity>true</gravity>
             <pose>0.35 0.305 -0.32 0 0 1.571</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="br_wheel_collision">
                 <geometry>
                     <mesh>
@@ -226,7 +301,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="br_wheel_visual">
                 <geometry>
                     <mesh>
@@ -240,9 +328,11 @@
         <link name="bl_wheel">
             <gravity>true</gravity>
             <pose>0.35 -0.305 -0.32 0 0 1.571</pose>
+
             <inertial>
                 <pose>0 0 0 0 0 0</pose>
             </inertial>
+
             <collision name="bl_wheel_collision">
                 <geometry>
                     <mesh>
@@ -250,7 +340,20 @@
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
+                <surface>
+                    <!-- This friction pamareter don't contain reliable data!! -->
+                    <friction>
+                        <ode>
+                            <mu>100000.0</mu>
+                            <mu2>100000.0</mu2>
+                            <fdir1>0 0 0</fdir1>
+                            <slip1>0.0</slip1>
+                            <slip2>0.0</slip2>
+                        </ode>
+                    </friction>
+                </surface>
             </collision>
+
             <visual name="bl_wheel_visual">
                 <geometry>
                     <mesh>
@@ -321,10 +424,6 @@
             <child>fl_wheel</child>
             <parent>left_rocker</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
@@ -334,10 +433,6 @@
             <child>fr_wheel</child>
             <parent>right_rocker</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
@@ -347,10 +442,6 @@
             <child>ml_wheel</child>
             <parent>left_bogie</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
@@ -360,10 +451,6 @@
             <child>mr_wheel</child>
             <parent>right_bogie</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
@@ -373,10 +460,6 @@
             <child>bl_wheel</child>
             <parent>left_bogie</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
@@ -386,10 +469,6 @@
             <child>br_wheel</child>
             <parent>right_bogie</parent>
             <axis>
-                <limit>
-                    <lower>-1.571</lower>
-                    <upper>1.571</upper>
-                </limit>
                 <xyz>0 -1 0</xyz>
             </axis>
         </joint>
