@@ -38,7 +38,7 @@
                 <geometry>
                     <mesh>
                         <scale>0.001 0.001 0.001</scale>
-                        <uri>model://rover/meshes/Rocker.STL</uri>
+                        <uri>model://meshes/Rocker.STL</uri>
                     </mesh>
                 </geometry>
             </collision>
@@ -46,7 +46,7 @@
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker.STL</uri>
+                        <uri>model://meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -64,7 +64,7 @@
             <collision name="left_rocker_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker.STL</uri>
+                        <uri>model://meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -73,7 +73,7 @@
             <visual name="left_rocker_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Rocker.STL</uri>
+                        <uri>model://meshes/Rocker.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -91,7 +91,7 @@
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie.STL</uri>
+                        <uri>model://meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -100,7 +100,7 @@
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie.STL</uri>
+                        <uri>model://meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -118,7 +118,7 @@
             <collision name="right_bogie_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie.STL</uri>
+                        <uri>model://meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -127,7 +127,7 @@
             <visual name="right_bogie_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Bogie.STL</uri>
+                        <uri>model://meshes/Bogie.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -141,7 +141,7 @@
             <collision name="fr_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -162,7 +162,7 @@
             <visual name="fr_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -180,7 +180,7 @@
             <collision name="fl_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -201,7 +201,7 @@
             <visual name="fl_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -219,7 +219,7 @@
             <collision name="mr_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -240,7 +240,7 @@
             <visual name="mr_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -258,7 +258,7 @@
             <collision name="ml_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -279,7 +279,7 @@
             <visual name="ml_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -297,7 +297,7 @@
             <collision name="br_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -318,7 +318,7 @@
             <visual name="br_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -336,7 +336,7 @@
             <collision name="bl_wheel_collision">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
@@ -357,7 +357,7 @@
             <visual name="bl_wheel_visual">
                 <geometry>
                     <mesh>
-                        <uri>model://rover/meshes/Tire.STL</uri>
+                        <uri>model://meshes/Tire.STL</uri>
                         <scale>0.001 0.001 0.001</scale>
                     </mesh>
                 </geometry>
